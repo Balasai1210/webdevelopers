@@ -1,0 +1,38 @@
+<html>
+ 
+<head>
+        // Adding Employee work
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+ 
+<body>
+    <div id="container"></div>
+    <script>
+ 
+        var pie = new ej.charts.AccumulationChart({
+            //Initializing Series
+            series: [
+                {
+                    dataSource: [
+                        { 'x': 'Meeting', y:30 }, 
+                        { 'x': 'Field work', y:20  },
+                        { 'x': 'Lunch', y:10  },
+                        { 'x': 'Recess', y:5  },
+                        { 'x': 'Coffee', y:5 },
+                        { 'x': 'Work', y:30 }
+
+                    ],
+                    dataLabel: {
+                        visible: true,
+                        position: 'Inside',
+                    },
+                    xName: 'x',
+                    yName: 'y'
+                }
+            ],
+        });
+        pie.appendTo('#container');
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,87 @@
+/*{
+	background-image:url("https://th.bing.com/th/id/OIP.ZPvwSriCQF3Y65TAAvoavQHaFj?w=281&h=211&c=7&r=0&o=5&dpr=1.25&pid=1.7");
+background-repeat: no-repeat;
+background-size: cover;
+}*/
+body{
+	background-color: rgb(128, 128, 128);
+}
+wrapper {
+	min-height: calc(100vh - 70px);
+	width: 1000px;
+	position: relative;
+}
+
+.navigationDesktop {
+	background:rgb(81, 61, 61);
+	text-decoration: none;
+}
+
+nav {
+	height: 40px;
+	width: 1560px;
+	margin: 0 auto;
+	text-align:justify;
+	text-transform:none;
+	margin-left: 0%;
+	
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 13pt;
+	color: darkgreen;
+}
+
+nav a:hover {
+	background: #262234;
+	color: #f5f0f5;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	background:rgb(0, 255, 85);
+}
+
+nav ul ul li {
+	position: relative;
+	display: none;
+}
+
+nav ul ul ul {
+	display: none;
+}
+
+nav ul li:hover ul li {
+	display: block;
+	animation: navmenu 500ms forwards;
+}
+
+@keyframes navmenu {
+	0% {
+		opacity: 0;
+		top: 5px;
+	}
+	100% {
+		opacity: 1;
+		top: 0px;
+	}
+}
+
+nav ul ul li:hover ul {
+	display: block;
+	position: absolute;
+	width: 140px;
+	left: 140px;
+	top: 0px;
+}
